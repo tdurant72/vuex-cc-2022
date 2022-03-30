@@ -1,12 +1,21 @@
 <template>
-  <div id="nav">
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
+  </div> -->
+  <NavBar/>
   <router-view/>
 </template>
+<script>
+import NavBar from "@/components/NavBar"
+export default {
+
+  components: { NavBar }
+}
+</script>
 
 <style>
+@import "styles.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
